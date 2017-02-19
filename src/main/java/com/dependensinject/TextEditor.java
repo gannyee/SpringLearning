@@ -1,4 +1,4 @@
-package com.tutorialspoint;
+package com.dependensinject;
 
 /**
  * Created by gannyee on 2017/2/18.

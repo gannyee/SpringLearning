@@ -3,9 +3,7 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="textEditor" class="com.dependensinject.TextEditor">
-        <property name="spellChecker">
-            <bean id="spellChecker" class="com.dependensinject.SpellChecker"/>
-        </property>
+    <bean id="customEventHandler" class="com.customevent.CustomEventHandler">
     </bean>
+    <bean id="customEventPublisher" class="com.customevent.CustomEventPublisher"></bean>
 </beans>

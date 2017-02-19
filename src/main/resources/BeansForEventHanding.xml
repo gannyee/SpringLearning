@@ -3,9 +3,12 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="textEditor" class="com.dependensinject.TextEditor">
-        <property name="spellChecker">
-            <bean id="spellChecker" class="com.dependensinject.SpellChecker"/>
-        </property>
+    <bean id="helloWorld" class="com.annotation.HelloWorld">
+        <property name="message" value="Hello World"/>
     </bean>
+
+    <bean id="cStartEventHandler" class="com.eventhanding.CStartEventHandler"/>
+
+    <bean id="cStopEventHandler" class="com.eventhanding.CStopEventHandler"/>
 </beans>
+
